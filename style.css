@@ -4,6 +4,10 @@
     background:#ECE6D5 ;
  }
 
+ .hide-desktop{
+    display: none;
+ }
+
 .wrap{
     /* padding: 1.5em 4em; */
     background: #050C0F;
@@ -22,6 +26,7 @@ nav {
     padding-right: 4em;
     border-radius: 40px;
     box-shadow:0px 5px 2px 2px rgba(0, 0, 0, 0.301);
+
     ul{
         
         width: 100%;
@@ -35,7 +40,6 @@ nav {
         color: #ECE6D5;
         list-style: none;
         justify-content: space-between;
-        
 
         li{
              &:nth-of-type(3){
@@ -61,11 +65,11 @@ nav {
         padding-bottom: 0;
         color: #ECE6D5;
         font-family: six caps;
-        font-size: 150px;
+        font-size: 9.375rem;
         transition: 0.5s;
         
         &:hover{
-            letter-spacing: 30px;
+            letter-spacing: 1.875rem;
         }
     }
 
@@ -76,7 +80,51 @@ nav {
         color: #ECE6D5;
         font-family: 'Montserrat';
         font-size: 2rem;
-        letter-spacing: 35px;
+        letter-spacing: 2.188rem;
     }
  
+}
+
+#L1, #L2, #L3, #L4{
+    transition: ease-in-out 0.2s;
+    &:hover{
+        text-decoration: underline;
+        text-decoration-thickness:4px ;
+        text-underline-offset: 10px;
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width:650px ) {
+    .hide-desktop{
+
+        display: block;
+        align-content: center;
+    }
+    .hide-mobile{
+        
+        display: none;
+    }
+
+    .hamburger{
+        padding: 1.9em;
+        text-align: center;
+    }
+
+    .wrap{
+        width: 100%;
+    }
+
+    .herocontainer{
+        .p1{
+            font-size: 5rem;
+            letter-spacing: 10px;
+        }
+
+        .p2{
+            font-size: 1rem;
+            letter-spacing: 18px;
+        }
+    }
+    
 }
