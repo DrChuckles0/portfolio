@@ -48,6 +48,11 @@ nav {
             font-size: 1.2rem;
             }   
         }
+
+        a{
+            text-decoration: none;
+            color: #ECE6D5;
+        }
     }
 }
 
@@ -85,6 +90,23 @@ nav {
  
 }
 
+.info{
+    padding: 2em;
+    display: flex;
+    img{
+        max-width: 20vw;
+        border: 1vw solid #D5CAA7;
+        border-radius: 2em;
+        margin-left: 4em;
+    }
+    h1{
+        font-family: 'Montserrat';
+        letter-spacing: 1em;
+        font-size: 4vw;
+        margin-left: 2em;
+    }
+}
+
 #L1, #L2, #L3, #L4{
     transition: ease-in-out 0.2s;
     &:hover{
@@ -106,6 +128,14 @@ nav {
         display: none;
     }
 
+    body{
+        width: 100%;
+    }
+
+    .menu{
+
+    }
+
     .hamburger{
         padding: 1.9em;
         text-align: center;
@@ -113,6 +143,7 @@ nav {
 
     .wrap{
         width: 100%;
+        border-radius: 0px 0px 50px 50px;
     }
 
     .herocontainer{
@@ -124,6 +155,26 @@ nav {
         .p2{
             font-size: 1rem;
             letter-spacing: 18px;
+        }
+    }
+
+    .info{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 10em;
+            border: 6px solid #D5CAA7;
+            border-radius: 1em;
+        }
+        h1{
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 7.5vw;
+            letter-spacing: 0.8em;
         }
     }
     
