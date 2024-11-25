@@ -21,7 +21,18 @@
                 <ul class="menu hide-mobile">
                     <li id="L1"><a href="#">Facebook</a></li>
                     <li id="L2"><a href="#">Instagram</a></li>
-                    <li >My<br>Socials</li>
+                    <li id="L0">My<br>Socials</li>
+                    <li id="L3"><a href="#">Dribble</a></li>
+                    <li id="L4"><a href="">Behance</a></li>
+                </ul>
+                <ul class="dropdown hide-desktop">
+                    <li>
+                        <a href="#" class="hamburger-close">
+                            <img src="close.svg" alt="close hamburger-close">
+                        </a>
+                    </li>
+                    <li id="L1"><a href="#">Facebook</a></li>
+                    <li id="L2"><a href="#">Instagram</a></li>
                     <li id="L3"><a href="#">Dribble</a></li>
                     <li id="L4"><a href="">Behance</a></li>
                 </ul>
@@ -41,5 +52,21 @@
         <img src="avatar.png" alt="avatar image">
         <h1>WELCOME</h1>
     </div>
+
+    <script>
+        const menu = document.querySelector('.dropdown');
+        const menuBtn = document.querySelector('.hamburger');
+        const closeBtn = document.querySelector('.hamburger-close');
+
+        menuBtn.addEventListener('click', () =>{
+            menu.classList.add('open')
+            console.log('clicked')
+        })
+
+        closeBtn.addEventListener('click', () =>{
+            menu.classList.remove('open')
+        })
+    </script>
+
 </body>
 </html>
