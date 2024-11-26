@@ -82,7 +82,7 @@ nav {
         transition: 0.5s;
         
         &:hover{
-            letter-spacing: 1.875rem;
+            letter-spacing: 1.5rem;
         }
     }
 
@@ -113,6 +113,22 @@ nav {
         letter-spacing: 1em;
         font-size: 4vw;
         margin-left: 2em;
+    }
+    /* p{
+        font-family: 'montserrat';
+        font-size: 2rem;
+    } */
+
+    .info-text{
+        display: inline-block;
+        justify-content: center;
+        p{
+            font-family: 'montserrat';
+            margin: auto;
+            font-size: 1.5vw;
+            width: 50vw;
+            text-align: center;
+        }
     }
 }
 
@@ -196,6 +212,7 @@ nav {
         flex-direction: column-reverse;
         margin-left: auto;
         margin-right: auto;
+        justify-content: center;
         img{
             display: block;
             margin-left: auto;
@@ -204,13 +221,28 @@ nav {
             border: 6px solid #D5CAA7;
             border-radius: 1em;
         }
+
         h1{
             margin-left: auto;
             margin-right: auto;
+            margin-bottom: 0.2em;
             padding: 0;
-            font-size: 7.5vw;
+            font-size: 7vw;
             /* letter-spacing: 0.8em; */
             text-align: end;
+        }
+
+        .info-text{
+            display: inline-block;
+            justify-content: center;
+            p{
+                font-family: 'montserrat';
+                margin: auto;
+                font-size: 1rem;
+                width: 80vw;
+                text-align: center;
+                margin-bottom: 2em;
+            }
         }
     }
     
