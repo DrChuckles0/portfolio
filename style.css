@@ -102,17 +102,78 @@ nav {
     padding: 2em;
     display: flex;
     justify-content: center;
-    img{
-        max-width: 20vw;
-        border: 1vw solid #D5CAA7;
-        border-radius: 2em;
-        /* margin-left: 4em; */
+    .info-details{
+        display: block;
+        /* justify-content: center; */
+        text-align: center;
+        img{
+            position: relative;
+            background: #ECE6D5;
+            max-width: 20vw;
+            border: 0.5vw solid #D5CAA7;
+            border-radius: 2em;
+            z-index: -99;
+            /* margin-left: 4em; */
+        }
+
+        #basic-info{
+            
+            justify-content: center;
+            background: #050C0F;
+            margin-top: -2.8em;
+            font-family: 'montserrat';
+            padding: 1em;
+            border: 0.5vw solid #D5CAA7;
+            border-radius: 2em;
+            /* z-index: 100; */
+            width: 25vw;
+            max-width: 25vw;
+            
+            li{
+                color: #ECE6D5;
+                list-style: none;
+                line-height: 2em;
+            }   
+            
+        }
+
+        #skills{
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: -0.5em;
+            background: #050C0F;
+            font-family: 'montserrat';
+            padding: 1em;
+            border: 0.5vw solid #D5CAA7;
+            border-radius: 2em;
+            width: 25vw;
+            max-width: 25vw;
+            gap: 2.5em;
+            line-height: 0.5em;
+            img{
+                z-index: 0;
+                border: 0;
+                border-radius: 0;
+                background: 0;
+                max-width: 4vw;
+            }
+            li{
+                padding-top: 20px 0px;
+                color: #ECE6D5;
+                list-style: none;
+                line-height: 2em;
+            }
+        }
     }
+    
     h1{
         font-family: 'Montserrat';
         letter-spacing: 1em;
         font-size: 4vw;
         margin-left: 2em;
+        margin-top: 0;
     }
     /* p{
         font-family: 'montserrat';
@@ -213,14 +274,52 @@ nav {
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
-        img{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 10em;
-            border: 6px solid #D5CAA7;
-            border-radius: 1em;
+
+        .info-details{
+            display: inline-block;
+            text-align: center;
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 10em;
+                border: 6px solid #D5CAA7;
+                border-radius: 1em;
+            }
+
+            #basic-info{
+                text-align: center;
+                max-width: 55vw;
+                min-width: 230px;
+                margin-left: auto;
+                margin-right: auto;
+                li{
+                    list-style: none;
+                }
+            }
+            #skills{
+                text-align: center;
+                max-width: 55vw;
+                min-width: 230px;
+                margin-left: auto;
+                margin-right: auto;
+                img{
+                    z-index: 0;
+                    border: 0;
+                    border-radius: 0;
+                    background: 0;
+                    min-width: 7vw;
+                }
+                li{
+                    list-style: none;
+                    padding-top: 20px 0px;
+                    color: #ECE6D5;
+                    list-style: none;
+                    line-height: 1em;
+                }
+            }
         }
+        
 
         h1{
             margin-left: auto;
