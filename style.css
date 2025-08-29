@@ -127,12 +127,13 @@ nav {
             border-radius: 2em;
             /* z-index: 100; */
             width: 25vw;
+            min-height: 10vw;
             max-width: 25vw;
             
             li{
                 color: #ECE6D5;
                 list-style: none;
-                line-height: 2em;
+                line-height: 2.3em;
             }   
             
         }
@@ -146,11 +147,11 @@ nav {
             background: #050C0F;
             font-family: 'montserrat';
             padding: 1em;
-            border: 0.5vw solid #D5CAA7;
+            border: 0.5vw solid hsl(46, 35%, 75%);
             border-radius: 2em;
             width: 25vw;
             max-width: 25vw;
-            gap: 2.5em;
+            gap: 1.5em;
             line-height: 0.5em;
             img{
                 z-index: 0;
@@ -158,6 +159,14 @@ nav {
                 border-radius: 0;
                 background: 0;
                 max-width: 4vw;
+            }
+            .p3{
+                color: #ECE6D5;
+                font-family: 'montserrat';
+                font-weight: 700;
+                justify-content:center;
+                width: 100%;            
+                line-height: 1.5rem;
             }
             li{
                 padding-top: 20px 0px;
@@ -170,10 +179,12 @@ nav {
     
     h1{
         font-family: 'Montserrat';
-        letter-spacing: 1em;
+        text-align: center;
+        letter-spacing: 4vw;
         font-size: 4vw;
-        margin-left: 2em;
-        margin-top: 0;
+        margin-left: 1.5em;
+        margin-top: 10vh;
+        margin-bottom: 0vh;
     }
     /* p{
         font-family: 'montserrat';
@@ -186,9 +197,87 @@ nav {
         p{
             font-family: 'montserrat';
             margin: auto;
-            font-size: 1.5vw;
+            font-size: 1.2vw;
             width: 50vw;
             text-align: center;
+        }
+
+        #works{
+            /* justify-content: center; */
+            background-color: #050C0F;
+            /* padding-top: 2vh; */
+            padding-bottom: 2vh;
+            padding-left: 0;
+            margin-left: 5vw;
+            margin-right: 5vw;
+            margin-top: 4.5vw;
+            border-radius: 2em;
+            max-height: 100vw;
+            min-height: 39vw;
+            border: 0.5vw solid #D5CAA7;
+
+            .p4{
+                color: #ECE6D5;
+                background-color: #050C0F;
+                max-width: 20%;
+                min-width: 15%;
+                
+                font-family: 'montserrat';
+                font-weight: 500;
+                justify-content:center;
+                width: 100%;            
+                line-height: 1.5rem;
+                font-size: large;
+
+                padding-top:1.5vh ;
+                padding-bottom:1.5vh ;
+                /* border: 0.5vw solid #D5CAA7;
+                margin-left: 20%;
+                margin-right: 20%;
+                padding-top: 1vw;
+                padding-bottom: 1vw;
+                padding-left: 0;
+                padding-right: 0; */
+                border-radius: 1em;
+                border: 0.5vw solid #D5CAA7;
+                transform: translate(-0%, -50%);
+            }
+
+            .work-gallery{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 5vw;
+                padding-top: 4vh;
+                padding-left: 3vw;
+                padding-right: 3vw;
+            }
+            .image-with-text{
+                max-width: 15vw;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                
+                padding-top: vh;
+                img{
+                   z-index: 0;
+                    border: 0;
+                    border-radius: 0;
+                    background: 0;
+                    max-width: 15vw;
+                }
+                .p5{
+                    text-align: center;
+                    font-family: 'montserrat';
+                    color: #ECE6D5;
+                    list-style: none;
+                    line-height: 2.3em;
+                    max-width: 15vw;
+                }
+            }
+            
         }
     }
 }
@@ -291,6 +380,8 @@ nav {
                 text-align: center;
                 max-width: 55vw;
                 min-width: 230px;
+                max-height: 200vw;
+                min-height: 30vw;
                 margin-left: auto;
                 margin-right: auto;
                 li{
@@ -325,6 +416,7 @@ nav {
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 0.2em;
+            margin-top: 1vh;
             padding: 0;
             font-size: 7vw;
             /* letter-spacing: 0.8em; */
