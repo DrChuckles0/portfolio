@@ -47,14 +47,14 @@ nav {
         list-style: none;
         justify-content: space-between;
 
-        .menu{
-/*             
+        /* .menu{
+            
             &:nth-of-type(3){
                 text-align: center;
                 font-weight: 600;
                 font-size: 1.2rem;
-            } */
-        }
+            }
+        } */
 
         a{
             text-decoration: none;
