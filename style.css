@@ -359,7 +359,7 @@ nav {
 
     .info{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction:column;
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
@@ -425,6 +425,7 @@ nav {
 
         .info-text{
             display: inline-block;
+            display: none;
             justify-content: center;
             p{
                 font-family: 'montserrat';
@@ -433,6 +434,9 @@ nav {
                 width: 80vw;
                 text-align: center;
                 margin-bottom: 2em;
+            }
+            #works{
+                display:inline-block;
             }
         }
     }
